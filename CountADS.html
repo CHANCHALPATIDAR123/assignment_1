@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        // const prompt = require('prompt-sync')();
+let str = prompt("enter a string ")
+let countAlpha = 0;
+let countNum = 0;
+let countSChar = 0;
+for (let i = 0; i < str.length; i++) {
+    let ch = str.charAt(i);
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+        countAlpha++;
+    }
+    else if (ch >= 48 || ch <= 57) {
+        countNum++
+    }
+    else {
+        countSChar++
+    }
+}
+console.log(countAlpha);
+console.log(countNum);
+console.log(countSChar);
+    </script>
+    </body>
+</html>

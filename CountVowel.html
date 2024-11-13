@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        let a = "abcdefg";
+        let vowelCount = 0;
+        let consonantCount = 0;
+        
+        for (let i = 0; i < a.length; i++) {
+            let str = a.charAt(i).toLowerCase();
+            if (str === 'a' || str === 'e' || str === 'i' || str === 'o' || str === 'u') {
+                vowelCount++;
+            } else {
+                consonantCount++;
+            }
+        }
+        console.log(vowelCount);
+        console.log(consonantCount);
+        </script>
+    </body>
+</html>
